@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <div data-role="page">
+
+        <div data-role="header">
+            <h1>ToDo List App</h1>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Ajouter une tâche...">
+                <button type="button" id="addTaskBtn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Ajouter</button>
+                <button type="button" id="resetTasksBtn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Réinitialiser</button>
+            </form>
+            <ul id="taskList" data-role="listview" data-inset="true">
+                <!-- Les tâches seront ajoutées ici -->
+            </ul>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>DIC3 &copy; 2024</h4>
+        </div><!-- /footer -->
+    </div>
+</body>
+</html>
